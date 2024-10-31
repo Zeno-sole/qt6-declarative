@@ -1,10 +1,10 @@
-# SymbolsHelper-Confirmed: 6.8.0 amd64 arm64 i386 loong64 riscv64
+# SymbolsHelper-Confirmed: 6.7.2 amd64
 libQt6QmlModels.so.6 libqt6qmlmodels6 #MINVER#
-| libqt6qmlmodels6 #MINVER#, qt6-declarative-private-abi (= 6.8.0)
+| libqt6qmlmodels6 #MINVER#, qt6-declarative-private-abi (= 6.7.2)
 * Build-Depends-Packages: qt6-declarative-dev, qt6-declarative-private-dev
- NonQt@NonQt 6.8.0
+ NonQt@NonQt 6.7.2
  Qt_6@Qt_6 6.6.0
- (symver)Qt_6_PRIVATE_API 0
+ (symver)Qt_6_PRIVATE_API 0 1
  _Z31qml_register_types_QtQml_Modelsv@Qt_6 6.6.0
  _ZGVZN9QMetaType21registerConverterImplI5QListI19QItemSelectionRangeE9QIterableI13QMetaSequenceEEEbSt8functionIFbPKvPvEES_S_E10unregister@Qt_6 6.6.0
  _ZGVZN9QMetaType21registerConverterImplI5QListI21QPersistentModelIndexE9QIterableI13QMetaSequenceEEEbSt8functionIFbPKvPvEES_S_E10unregister@Qt_6 6.6.0

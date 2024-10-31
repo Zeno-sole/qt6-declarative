@@ -5,6 +5,7 @@ libqt6quickcontrols2-6: symbols-declares-dependency-on-other-package qt6-declara
 # The following are private libraries installed into a public path
 libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2Basic 6 for usr/lib/*/libQt6QuickControls2Basic.so.6.* [shlibs]
 libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2BasicStyleImpl 6 for usr/lib/*/libQt6QuickControls2BasicStyleImpl.so.6.* [shlibs]
+libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2FluentWinUI3StyleImpl 6 for usr/lib/*/libQt6QuickControls2FusionStyleImpl.so.6.* [shlibs]
 libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2Fusion 6 for usr/lib/*/libQt6QuickControls2Fusion.so.6.* [shlibs]
 libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2FusionStyleImpl 6 for usr/lib/*/libQt6QuickControls2FusionStyleImpl.so.6.* [shlibs]
 libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2Imagine 6 for usr/lib/*/libQt6QuickControls2Imagine.so.6.* [shlibs]
@@ -17,6 +18,7 @@ libqt6quickcontrols2-6: ships-undeclared-shared-library libQt6QuickControls2Univ
 
 libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2Basic 6 for usr/lib/*/libQt6QuickControls2Basic.so.6.* [symbols]
 libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2BasicStyleImpl 6 for usr/lib/*/libQt6QuickControls2BasicStyleImpl.so.6.* [symbols]
+libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2FusionStyleImpl 6 for usr/lib/*/libQt6QuickControls2FusionStyleImpl.so.6.* [symbols]
 libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2Fusion 6 for usr/lib/*/libQt6QuickControls2Fusion.so.6.* [symbols]
 libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2FusionStyleImpl 6 for usr/lib/*/libQt6QuickControls2FusionStyleImpl.so.6.* [symbols]
 libqt6quickcontrols2-6: shared-library-symbols-not-tracked libQt6QuickControls2Imagine 6 for usr/lib/*/libQt6QuickControls2Imagine.so.6.* [symbols]

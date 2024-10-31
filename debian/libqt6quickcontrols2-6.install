@@ -1,4 +1,5 @@
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6QuickControls2.so.*
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6QuickControls2Impl.so.*
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6QuickControls2Basic.so.*
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6QuickControls2BasicStyleImpl.so.*
 usr/lib/${DEB_HOST_MULTIARCH}/libQt6QuickControls2FluentWinUI3StyleImpl.so.*

@@ -4,30 +4,139 @@ qt6-declarative (6.8.0+dfsg-0deepin1) UNRELEASED; urgency=medium
 
  -- Tianyu Chen <sweetyfish@deepin.org>  Fri, 18 Oct 2024 16:14:21 +0800
 
-qt6-declarative (6.6.1+dfsg-1deepin3) unstable; urgency=medium
+qt6-declarative (6.7.2+dfsg-9) unstable; urgency=medium
 
-  * Import patch from upstream:
-    - Fix-corrupt-rendering-when-toggling-rendernode-based-items.patch
-    https://codereview.qt-project.org/c/qt/qtdeclarative/+/521190
+  [ Dmitry Shachnev ]
+  * Make qml6-module-qtquick-controls depend on qml6-module-qtquick and
+    qml6-module-qtquick-templates.
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Wed, 17 Jan 2024 10:44:07 +0800
+  [ Patrick Franz ]
+  * Put static libs back into the dev-package as qtcreator needs them.
 
-qt6-declarative (6.6.1+dfsg-1deepin2) unstable; urgency=medium
+ -- Patrick Franz <deltaone@debian.org>  Sat, 05 Oct 2024 01:38:25 +0200
 
-  * Import three patches:
-    - Add-the-reset-function-for-properties-of-QQuickPalet.patch.
-    - Rename-accent-color-in-QPalette.patch
-    - Palette-Remove-redundant-code.patch
-    https://codereview.qt-project.org/c/qt/qtdeclarative/+/414503
+qt6-declarative (6.7.2+dfsg-8) experimental; urgency=medium
 
+  * Team upload.
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Wed, 10 Jan 2024 14:30:45 +0800
+  [ Aurélien COUDERC ]
+  * Update symbols from buildds for 6.7.2.
 
-qt6-declarative (6.6.1+dfsg-1deepin1) unstable; urgency=medium
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 22 Sep 2024 23:51:06 +0200
 
-  * Drop patch introduced by git-rebase.
+qt6-declarative (6.7.2+dfsg-7) experimental; urgency=medium
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Wed, 27 Dec 2023 10:25:26 +0800
+  [ Patrick Franz ]
+  * Fix handling of private symbols.
+
+ -- Patrick Franz <deltaone@debian.org>  Sun, 08 Sep 2024 15:48:05 +0200
+
+qt6-declarative (6.7.2+dfsg-6) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Wed, 04 Sep 2024 18:33:52 +0200
+
+qt6-declarative (6.7.2+dfsg-5) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Add missing Breaks+Replaces for libqt6quickcontrols2-6 against
+    libqt6quickcontrols2impl6 (Closes: #1080421).
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 03 Sep 2024 23:50:32 +0200
+
+qt6-declarative (6.7.2+dfsg-4) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 03 Sep 2024 12:13:51 +0200
+
+qt6-declarative (6.7.2+dfsg-3) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Update list of installed files.
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 03 Sep 2024 00:32:41 +0200
+
+qt6-declarative (6.7.2+dfsg-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New binary package libqt6qmlnetwork6.
+
+ -- Patrick Franz <deltaone@debian.org>  Sat, 31 Aug 2024 11:30:15 +0200
+
+qt6-declarative (6.7.2+dfsg-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.7.2).
+  * Bump Qt B-Ds to 6.7.2.
+  * Update ABI to 6.7.2.
+  * Update list of installed files and new binary package qml6-module-
+    qtnetwork.
+  * Update symbols from buildlogs.
+  * Update d/copyright.
+
+ -- Patrick Franz <deltaone@debian.org>  Fri, 30 Aug 2024 21:41:45 +0200
+
+qt6-declarative (6.6.2+dfsg-4) unstable; urgency=medium
+
+  * Team upload.
+  * Following the enablement of Vulkan also on non-Linux architectures in
+    qt6-base 6.6.2+dfsg-9, remove the linux-any limitation for the
+    Vulkan-related examples in qt6-declarative-examples.install.
+  * There are no more architecture-specific files in install files, so:
+    - drop the dh-exec usage in qt6-declarative-examples.install
+    - drop the dh-exec build dependency
+  * Sort the install files.
+  * Bump Standards-Version to 4.7.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 12 Jul 2024 05:53:37 +0200
+
+qt6-declarative (6.6.2+dfsg-3) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 06 Jun 2024 18:20:27 +0200
+
+qt6-declarative (6.6.2+dfsg-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Re-introduce package libqt6qmlworkerscript6.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 12 Mar 2024 19:15:55 +0100
+
+qt6-declarative (6.6.2+dfsg-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.6.2).
+  * Bump Qt B-Ds to 6.6.2.
+  * Build-depend on pkgconf instead of pkg-config as the latter has been
+    superseded by the former.
+  * Update ABI to 6.6.2.
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 15 Feb 2024 20:55:06 +0100
+
+qt6-declarative (6.6.1+dfsg-3) experimental; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * qt6-declarative-dev: add versioned depends on packages produced by this
+    source. This avoids mixed installed versions as reported by Stuart
+    Prescott on IRC.
+
+ -- Patrick Franz <deltaone@debian.org>  Sun, 14 Jan 2024 18:00:35 +0100
+
+qt6-declarative (6.6.1+dfsg-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Re-introduce package libqt6quickshapes6.
+  * Update symbols from buildlogs.
+  * Fix typos in documentation.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 09 Jan 2024 00:01:55 +0100
 
 qt6-declarative (6.6.1+dfsg-1) experimental; urgency=medium
 

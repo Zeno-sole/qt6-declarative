@@ -22,6 +22,23 @@ override_dh_auto_configure:
 		-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 		$(extra_cmake_args)
 
+override_dh_shlibdeps:
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+
+override_dh_makeshlibs:
+	dh_makeshlibs \
+		-XlibQt6QuickControls2Impl \
+		-XlibQt6QuickControls2Basic \
+		-XlibQt6QuickControls2BasicStyleImpl \
+		-XlibQt6QuickControls2Fusion \
+		-XlibQt6QuickControls2FusionStyleImpl \
+		-XlibQt6QuickControls2Imagine \
+		-XlibQt6QuickControls2ImagineStyleImpl \
+		-XlibQt6QuickControls2Material \
+		-XlibQt6QuickControls2MaterialStyleImpl \
+		-XlibQt6QuickControls2Universal \
+		-XlibQt6QuickControls2UniversalStyleImpl
+
 override_dh_auto_build-indep:
 	dh_auto_build -- docs
 

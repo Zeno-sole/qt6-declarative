@@ -1,0 +1,5 @@
+# libQt6QmlVectorImage6 is a private library installed in a public path
+qml6-module-qtquick-vectorimage: package-name-doesnt-match-sonames libQt6QmlVectorImage6
+qml6-module-qtquick-vectorimage: no-symbols-control-file usr/lib/*/libQt6QmlVectorImage.so.6.*
+qml6-module-qtquick-vectorimage: package-name-doesnt-match-sonames libQt6QmlVectorImageGenerator6
+qml6-module-qtquick-vectorimage: no-symbols-control-file usr/lib/*/libQt6QmlVectorImageGenerator.so.6.*
